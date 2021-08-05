@@ -1,0 +1,32 @@
+{% extends "template.html" %}
+{% block conteudo %}
+        <form method="post" action="{{ url_for('criar') }}">
+            <fieldset>
+                <div class="mb-3">
+                    <label for="id">Id:</label>
+                    <input type="text" id="id" name="id" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca" name="marca" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="modelo">Modelo:</label>
+                    <input type="text" id="modelo" name="modelo" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="cor">Cor:</label>
+                    <input type="text" id="cor" name="cor" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="combustivel">Combustível:</label>
+                    <input type="text" id="combustivel" name="combustivel" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="ano">Ano:</label>
+                    <input type="text" id="ano" name="ano" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary btn-salvar">Salvar</button>
+            </fieldset>
+        </form>
+{% endblock %}
